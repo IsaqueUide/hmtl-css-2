@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Formatação e etc</title>
+</head>
+<body>
+    <h1>principais formatações</h1>
+    <h2>Negrito ou Destaque</h2>
+    <p>Nesta frase temos <b>o uso do negrito</b> usando a tag &lt;b&gt; (tag não semântica)</p>
+    <p>Já nesta frase temos <strong>o uso do negrito</strong> usando a tag &lt;strong&gt; (tag semântica)</p>
+    <h2>Itálico ou Ênfase</h2>
+    <p>Nesta frase temos <i>o uso do itálico</i> usando a tag &lt;i&gt; (tag não semântica)</p>
+    <p>Nesta frase temos <em>o uso do itálico</em> usando a tag &lt;em&gt; (tag semântica)</p>
+    <h2>Texto marcado</h2>
+    <p>
+        <mark>esse texto vai estar marcado</mark> usando a tag &lt;mark&gt;
+    </p>
+    <h2>Texto grande e texto pequeno</h2>
+    <p><big>Texto grande</big> com &lt;big&gt; e <small>texto pequeno</small> com &lt;small&gt;</p>
+    <h2>Código-fonte</h2>
+    <p>O comando <code>document.getElementById('teste')</code> é escrito em linguagem JavaScript.</p>
+    <h3>Calculadora em python</h3>
+    <p>
+        <pre>
+            <code>
+        def calculadora():
+            print("Selecione a operação:")
+            print("1 - Soma (+)")
+            print("2 - Subtração (-)")
+            print("3 - Multiplicação (*)")
+            print("4 - Divisão (/)")
+    
+            escolha = input("Digite a opção (1/2/3/4): ")
+    
+            if escolha in ('1', '2', '3', '4'):
+        try:
+            num1 = float(input("Digite o primeiro número: "))
+            num2 = float(input("Digite o segundo número: "))
+        except ValueError:
+            print("Erro: Entrada inválida. Digite um número.")
+            return
+        if escolha == '1':
+            print(f"Resultado: {num1 + num2}")
+        elif escolha == '2':
+            print(f"Resultado: {num1 - num2}")
+        elif escolha == '3':
+            print(f"Resultado: {num1 * num2}")
+        elif escolha == '4':
+            if num2 != 0:
+                print(f"Resultado: {num1 / num2}")
+            else:
+                print("Erro: Divisão por zero não permitida.")
+            else:
+        print("Opção inválida.")
+    
+        # Executar a calculadora
+        if __name__ == "__main__":
+            calculadora()
+            </code>
+        </pre>
+    </p>
+    <h2>Citação</h2>
+    <blockquote><q>Os polvos são moluscos marinhos da classe Cephalopoda, da ordem Octopoda (oito pés), possuindo oito braços fortes e com ventosas dispostos à volta da boca. Como o resto dos cefalópodes, o polvo tem um corpo mole, sem esqueleto interno (ao contrário das lulas) nem externo, como o argonauta. Como meios de defesa, o polvo possui a capacidade de largar tinta, de mudar a sua cor (camuflagem, através dos cromatóforos), e autotomia de seus braços.</q></blockquote>
+    <h2>Abreviações UwU</h2>
+    <p>Estou estudando, &#x1FAE9;pela terceira vez&#x1FAE9;, <abbr title="HyperText Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS.</abbr> &#x1FAE9;Estou ADORANDO!!!&#x1FAE9;</p>
+    <h1>Listas</h1>
+    <h2>Listas Ordenadas</h2>
+    <ol type="I">
+        <li>Kyle Rayner</li>
+        <li>Hal Jordan</li>
+        <li>John Stewart</li>
+    </ol>
+    <h2>Listas Não Ordenadas</h2>
+    <ul type="square">
+        <li>Spider-Man</li>
+        <li>Read Dead Redemption</li>
+        <li>Nier Automata</li>
+    </ul>
+    <dl>
+        <dt>HTML</dt>
+        <dd>Linguagem de marcação para a criação do conteúdo de um site</dd>
+        <dt>CSS</dt>
+        <dd>Linguagem de marcação para a criação do design de um site</dd>
+    </dl>
+</body>
+</html>

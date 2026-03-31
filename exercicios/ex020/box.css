@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+h1{
+    background-color: brown;
+    color: whitesmoke;
+    width: 300px;
+    height: 300px;
+    border: 10px solid rebeccapurple;
+    text-align: center;
+    padding-top: 20px;
+    margin: auto;
+}
+#ex{
+    border: 5px double #075b07;
+}

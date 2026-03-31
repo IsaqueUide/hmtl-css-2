@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de hover</title>
+    <style>
+        div > p{
+            display: none;
+        }
+        div:hover{
+            color: chartreuse;
+        }
+        div:hover > p{
+            display: block;
+            color: white;
+            background-color: black;
+            text-align: center;
+            height: 100px;
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+    <p><a href="index.html">volte para outra página</a></p>
+    <h1>Outro Exemplo de Hover</h1>
+    <div>
+        passe o mouse aqui
+        <p>BUUU</p>
+    </div>
+</body>
+</html>
