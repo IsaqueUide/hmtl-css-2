@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>centralizar</title>
+    <style>
+        body{
+            height: 100vh;
+            background-color: black;
+            background-image: url(https://i.pinimg.com/736x/30/e0/e8/30e0e8b7c037a9fc6fb69fb7ec6a39eb.jpg);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+        nav{
+            text-align: end;
+        }
+        nav > a{
+            text-decoration: none;
+            font-family: monospace;
+            padding: 10px;
+            color: rgb(51, 2, 95);
+        }
+        a:hover{
+            color: chartreuse;
+            text-decoration: underline;
+        }
+        #container{
+            background-image: url(imagens/target001.png);
+            background-size: 100% 100%;
+            position: relative;
+            height: 94vh;
+            background-color: #7b2e9f;
+            padding: 10px;
+        }
+        #conteudo{
+            background-image: url(imagens/target001.png);
+            background-size: 100% 100%;
+            position: absolute;
+            height: 200px;
+            width: 400px;
+            background-color: chartreuse;
+            transform: translate(-50%, -50%);
+            left: 50%;
+            top: 50%;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+            <a href="fundo001.html"> FUNDO_001</a>
+            <a href="fundo002.html">FUNDO_002</a>
+            <a href="fundo004.html">FUNDO_004</a>
+        </nav>
+    <section id="container">
+        <article id="conteudo">
+
+        </article>
+    </section>
+</body>
+</html>
