@@ -4,16 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário, cheio disso já</title>
+    <style>
+        input{
+            margin: 10px 3px 10px 3px;
+        }
+        fieldset{
+            margin-top: 15px;
+        }
+    </style>
 </head>
 <body>
     <h1>mais um outro monte de tipo de formulário...</h1>
     <form action="cadastro.php" method="get" autocomplete="on">
         <fieldset>
-            <legend>Esportes favoritos</legend>
-            <input type="checkbox" name="esfut" id="iesfut"> Futebol <br>
-            <input type="checkbox" name="esbas" id="iesbas"> Basquete <br>
-            <input type="checkbox" name="esnat" id="iesnat"> Natação <br>
-            <input type="checkbox" name="esten" id="iesten"> Tênis
+            <legend> Gênero </legend>
+            <input type="radio" name="sx" id="isxman">
+                <label for="isxman">Homem</label> <br>
+            <input type="radio" name="sx" id="isxwoman">
+                <label for="isxwoman">Mulher</label> <br>
+            <input type="radio" name="sx" id="isxnon">
+                <label for="isxnon">Não-binário</label>
+        </fieldset>
+        <fieldset>
+            <legend> Esportes favoritos </legend>
+            <input type="checkbox" name="esfut" id="iesfut"> 
+                <label for="iesfut">Futebol</label> <br>
+            
+            <input type="checkbox" name="esbas" id="iesbas"> 
+                <label for="iesbas">Basquete</label> <br>
+            
+            <input type="checkbox" name="esnat" id="iesnat"> 
+                <label for="iesnat">Natação</label> <br>
+            
+            <input type="checkbox" name="esten" id="iesten"> 
+                <label for="iesten">Tênis</label>
         </fieldset>
         <p>
             <input type="submit" value="Enviar">
