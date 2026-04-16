@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário, cheio disso já</title>
+    <style>
+        input{
+            margin: 10px 3px 10px 3px;
+        }
+        fieldset{
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+    <h1>mais um outro monte de tipo de formulário...</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <fieldset>
+            <p>
+                <label for="icor">Cor</label>
+                    <input type="color" name="cor" id="icor" value="#00ff00">
+            </p>
+            <p>
+                <label for="inivel">Nível de satisfação </label>
+                    <input type="range" name="nivel" id="inivel" min="1" max="5">
+            </p>
+            <p>
+                <label for="ifoto">Foto de perfil</label>
+                    <input type="file" name="foto" id="ifoto">
+            </p>
+        </fieldset>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
