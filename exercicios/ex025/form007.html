@@ -17,7 +17,35 @@
     <h1>mais um outro monte de tipo de formulário...</h1>
     <form action="cadastro.php" method="get" autocomplete="on">
         <fieldset>
-            
+            <p>
+                <label for="iest">Estado </label>
+                    <select name="estado" id="iest">
+                            <option value="" selected>----Escolha----</option>
+                        <optgroup label="Região Sudeste">
+                            <option value="ES">Espiríto Santo</option>
+                            <option value="MG">Minas Gerais</option>
+                            <option value="RJ">Rio de Janeiro</option>
+                            <option value="SP">São Paulo</option>
+                        </optgroup>
+                        <optgroup label="Região Nordeste">
+                            <option value="BA">Bahia</option>
+                            <option value="MA">Maranhão</option>
+                            <option value="RN">Rio Grande do Norte</option>
+                            <option value="PE">Pernambuco</option>
+                        </optgroup>
+                    </select>
+            </p>
+            <p>
+                <label for="iprof">Profissão </label>
+                    <input type="text" name="prof" id="iprof" list="lstprof">
+                    <datalist id="lstprof">
+                        <option value="ADM">Administrador</option>
+                        <option value="UI">Designer de User Interface</option>
+                        <option value="Front">Front-End Developer</option>
+                        <option value="Gari">Gari</option>
+                        <option value="Imp">Imperador da China</option>
+                    </datalist>
+            </p>
         </fieldset>
         <p>
             <input type="submit" value="Enviar">
