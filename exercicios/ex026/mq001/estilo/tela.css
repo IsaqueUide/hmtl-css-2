@@ -29,6 +29,9 @@ menu li{
     padding: 10px;
     margin: 8px;
 }
+main{
+    margin-top: 15px;
+}
 article{
     width: 600px;
     display: block;
