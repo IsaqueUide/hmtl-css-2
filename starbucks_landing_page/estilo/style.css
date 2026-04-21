@@ -16,8 +16,35 @@ header{
     position: sticky;
     top: 0;
     z-index: 1;
-}
 
-body{
-    min-height: 200vh;
+    .navbar{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .logo{
+            width: 180px;
+        }
+
+        ul{
+            display: none;
+            list-style: none;
+            flex-direction: column;
+            gap: 0.5rem;
+            width: 100%;
+            position: absolute;
+            top: 80px;
+            background-color: var(--color-neutral-1);
+            left: 0;
+            padding: 1rem;
+            
+            &.show{
+                display: flex;
+            }
+        }
+
+        .btn-default{
+            display: none;
+        }
+    }
 }
