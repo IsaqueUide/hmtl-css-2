@@ -18,6 +18,25 @@
     height: 400vh;
 }
 
+.title{
+    font-size: 2.rem;
+    text-transform: uppercase;
+    color: var(--color-neutral-8);
+    font-weight: 700;
+    position: relative;
+
+    &::before{
+        content: '';
+        display: block;
+        width: 60px;
+        height: 4px;
+        background-color: var(--color-primary-1);
+        position: absolute;
+        bottom: 0;
+        border-radius: 30px;
+    }
+}
+
 a.btn{
     text-decoration: none;
 }
@@ -96,5 +115,63 @@ a.btn{
         display: flex;
         gap: 12px;
         margin-top: 12px;
+    }
+}
+
+#trending{
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    min-height: calc(100vh - 96px);
+
+    .trending-cards{
+        .trending-card{
+            position: relative;
+
+            img{
+                width: clamp(300px, 5vw, 600px);
+            }
+
+            .trending-rate{
+                background-color: var(--color-neutral-0);
+                position: absolute;
+                bottom: 70px;
+                right: 30px;
+                padding: 5px 10px;
+                border-radius: 5px;
+
+                i{
+                    color: var(--color-secondary-1);
+                }
+            }
+
+            .trending-card-description{
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                font-size: 1.3rem;
+                font-weight: 600;
+                color: var(--color-neutral-8);
+
+                span{
+                    font-size: 1rem;
+                    font-weight: 500;
+                    color: var(--color-neutral-7);
+                }
+            }
+        }
+    }
+}
+
+@media (min-width:768px){
+    #trending{
+        .trending-cards{
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 24px;
+        }
     }
 }
