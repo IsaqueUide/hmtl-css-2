@@ -119,7 +119,7 @@ a.btn{
 }
 
 #trending{
-    padding: 32px;
+    padding: 32px 4%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -161,6 +161,36 @@ a.btn{
                     color: var(--color-neutral-7);
                 }
             }
+        }
+    }
+}
+
+#about{
+    padding: 32px 4%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--color-primary-1);
+    background-image: url(../imagens/about/bg-about.png);
+    min-height: calc(100vh - 96px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+
+    .title{
+        color: var(--color-neutral-0);
+
+        &::before{
+            background-color: var(--color-secondary-1);
+        }
+    }
+
+    .about-content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+
+        .about-image{
+            
         }
     }
 }
