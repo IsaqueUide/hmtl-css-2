@@ -15,7 +15,6 @@
 #container{
     background-image: url(../imagens/background-mobile.png);
     background-size: contain;
-    height: 400vh;
 }
 
 .title{
@@ -220,6 +219,20 @@ a.btn{
                 }
             }
         }
+    }
+}
+
+#products{
+    padding: 48px 8%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 58px;
+
+    .products-cards{
+        display: flex;
+        flex-direction: column;
+        gap: 58px;
     }
 }
 
