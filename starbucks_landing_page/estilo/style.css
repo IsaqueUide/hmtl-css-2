@@ -59,6 +59,7 @@ a.btn{
 .btn-default{
     background-color: var(--color-primary-1);
     color: var(--color-neutral-0);
+    margin-right: 30px;
 
     &:hover{
         color: var(--color-primary-2);
