@@ -275,6 +275,17 @@ a.btn{
     }
 }
 
+footer{
+    background-color: var(--color-primary-1);
+    color: var(--color-neutral-0);
+    text-align: center;
+    padding: 12px;
+
+    p{
+        font-size: 1rem;
+    }
+}
+
 @media (min-width:768px){
     #container{
         background-image: url(../imagens/background-desktop.png);
