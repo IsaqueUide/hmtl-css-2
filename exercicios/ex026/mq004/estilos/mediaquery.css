@@ -15,6 +15,15 @@ Grandes telas: acima de 1201px
         background-image: url(../imagens/back-print.jpg); /*Desnecessário, pois o navegador não imprime background-image*/
     }
 
+    main{
+       border: 2px solid black; 
+    }
+
+    main::after{
+        content: 'Essa impressão é impressionante.';
+        text-decoration: underline;
+    }
+
     img#phone{display: none;}
     img#tablet{display: none;}
     img#print{display: block;}
