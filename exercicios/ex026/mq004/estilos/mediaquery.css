@@ -16,11 +16,13 @@ Grandes telas: acima de 1201px
     }
 
     main{
-       border: 2px solid black; 
+        width: 90vw;
+        border: 2px solid black; 
     }
 
     main::after{
         content: 'Essa impressão é impressionante.';
+        text-align: center;
         text-decoration: underline;
     }
 
